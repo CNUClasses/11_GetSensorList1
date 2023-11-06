@@ -1,12 +1,12 @@
 apply plugin: 'com.android.application'
 
 android {
-    compileSdkVersion 29
+    compileSdk 34
 
    defaultConfig {
         applicationId "com.tetonsoftware.getsensorlist"
-        minSdkVersion 14
-        targetSdkVersion 29
+        minSdkVersion 23
+        targetSdkVersion 34
     }
 
     buildTypes {
@@ -15,6 +15,7 @@ android {
             proguardFiles getDefaultProguardFile('proguard-android.txt'), 'proguard-rules.txt'
         }
     }
+    namespace 'com.tetonsoftware.getsensorlist'
 }
 
 dependencies {

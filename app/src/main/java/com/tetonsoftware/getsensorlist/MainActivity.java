@@ -27,7 +27,7 @@ public class MainActivity extends ListActivity {
 
 			for (Sensor i : listSensor) {
 				listSensorType.add(i.getName() + " Power-" + i.getPower()
-						+ " Delay-" + i.getMinDelay());
+						+ " Delay-" + i.getMinDelay() );
 			}
 
 			setListAdapter(new ArrayAdapter<String>(this, android.R.layout.simple_list_item_1, listSensorType));
